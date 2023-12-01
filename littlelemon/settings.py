@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'restaurant',
     'rest_framework',
     'djoser',
+
 ]
 
 MIDDLEWARE = [

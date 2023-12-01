@@ -1,4 +1,7 @@
-/api/bookings/
-/api/registration/
+/api
+/admin
+/restaurant
+/auth
+
 Superuser: darin
 Password: 519pannes
