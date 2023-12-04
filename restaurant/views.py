@@ -50,48 +50,7 @@ class MenuView(APIView):
         return Response(serializer.errors, status=400)
     
     
-#from .serializer import menuSerializer, BookingSerializer
 
-#class BookingView(generics.ListCreateAPIView):
-   # permission_classes = [AllowAny]
-   # queryset = booking.objects.all()
-    #serializer_class = BookingSerializer
-    
-    #def get_queryset(self):
-        #date = self.request.query_params.get('date', None)
-        #if date is not None:
-           # return self.queryset.filter(booking_date=date)
-        #return self.queryset
-    
-#from .serializer import menuSerializer, BookingSerializer
-
-#class MenuView(generics.ListCreateAPIView):
-    #permission_classes = [AllowAny]
-    #queryset = menu.objects.all()
-    #serializer_class = menuSerializer
-    
-    #def get_queryset(self):
-       # category = self.request.query_params.get('category', None)
-       # if category is not None:
-        #    return self.queryset.filter(category=category)
-        #return self.queryset
-    
-    #My code above.
-#class MenuItemsView(generics.ListCreateAPIView):
-   # permission_classes = [AllowAny]
-    #queryset = menu.objects.all()
-    #serializer_class = menuSerializer
-
-#class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.RetrieveDestroyAPIView):
-   
-    #queryset = menu.objects.all()
-    #serializer_class = menuSerializer
-
-  
-#class BookingViewSet(viewsets.ModelViewSet):
-    #permission_classes = [IsAuthenticated]
-    #queryset = Booking.objects.all()
-    #serializer_class = BookingSerializer
 
 def book(request):
     form = BookingForm
